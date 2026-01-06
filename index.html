@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biografi - Profil Manda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#112c4747;
+      --card:#f170cf;
+      --muted:#521a50;
+      --accent:#132c6067;
+      --glass: rgba(158, 58, 58, 0.7);
+      --radius:14px;
+      --max-width:920px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2f8);
+      color:#0f172a;
+      padding:32px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 10px 30px rgba(16,24,40,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:24px;
+      padding:28px;
+    }
+
+    /* SIDEBAR */
+    .profile-card{
+      background:linear-gradient(180deg,var(--glass), rgba(204, 93, 226, 0.5));
+      border-radius:12px;
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:12px;
+    }
+    .profile-photo{
+      width:160px;
+      height:160px;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 8px 18px rgba(37, 43, 56, 0.12);
+      border:4px solid rgba(184, 145, 145, 0.6);
+      background:linear-gradient(135deg,#9550ad,#fff);
+    }
+    .name{
+      font-weight:700;
+      font-size:1.2rem;
+      margin-top:6px;
+    }
+    .role{color:var(--muted);font-size:0.95rem}
+
+    .links{display:flex;gap:10px;margin-top:6px}
+    .links a{
+  padding:8px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:white;
+  transition:0.3s ease;
+}
+
+    /* MAIN */
+    .main{
+      padding:6px 2px;
+    }
+    .section{
+      background:transparent;
+      margin-bottom:18px;
+    }
+    .headline{
+      display:flex;align-items:center;justify-content:space-between;margin-bottom:8px
+    }
+    h2{margin:0;font-size:1.05rem}
+    p.lead{color:var(--muted);line-height:1.6}
+
+    /* Achievement table */
+    table{
+  width:100%;
+  border-collapse:collapse;
+  background:#ffffff; /* background tabel */
+  border-radius:12px;
+  overflow:hidden;
+}
+
+thead th{
+  background:#e9b3dd; /* header tabel */
+  color:#3a0f2e;
+  text-align:left;
+  padding:12px 14px;
+  font-weight:700;
+  font-size:0.95rem;
+}
+
+tbody td{
+  padding:12px 14px;
+  background:#efadd5; /* isi tabel */
+  border-bottom:1px solid #e2c4da;
+  vertical-align:top;
+}
+
+tbody tr:nth-child(even) td{
+  background:#f0c6e0; /* striping */
+}
+
+tbody tr:last-child td{
+  border-bottom:none;
+}
+
+    /* small responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns:1fr;}
+      .profile-card{flex-direction:row;align-items:center;text-align:left;padding:12px}
+      .profile-photo{width:96px;height:96px}
+    }
+
+    /* small utility */
+    .muted{color:var(--muted);font-size:0.95rem}
+    .btn-primary{
+      display:inline-block;padding:8px 12px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="profile-card" aria-labelledby="nama">
+      <img src="manda.jpg.jpeg" alt="Foto Profil" class="profile-photo"/>
+      <div>
+        <div id="nama" class="name">Indira Asmarammanda</div>
+        <div class="role">[Siswi SMA]</div>
+        <div class="muted">PT GMP, Lampung Tengah • 17 • SMA</div>
+
+        <div class="links">
+  <a href="https://www.instagram.com/sseynda?igsh=MWx2aTJpNjM5MjRycw==" 
+     class="instagram" target="_blank">Instagram</a>
+
+  <a href="https://drive.google.com/drive/folders/1tSd1kxBdyS9jd0w1EfdZmGdFMghhePMC" 
+     class="gdrive" target="_blank">GDrive</a>
+</div>
+    </aside>
+
+    <main class="main">
+      <section class="section intro">
+        <div class="headline"><h2>Tentang Manda</h2></div>
+        <p class="lead">Halo! <strong>Nama ku adalah Indira Asmarammanda biasa dipanggil Manda, lahir tanggal 18 September 2007.
+     Aku merupakan sulung dari 3 bersaudara. Tinggal di Perumahan III PT GMP.Hobi saya adalah dance, menyanyi, mendengarkan musik,
+      menonton film, traveling, membaca novel  dan masih banyak lagi.
+    Bersekolah di TK 3, SDN 3, SMP SATYA DHARMA SUDJANA, dan sekarang SMA GUNUNG MADU.</p>
+        <p class="lead">Warna kesukaan ku biru, pink, maroon, and brown. Cita-cita ku untuk saat ini ingin 
+    menjadi penulis, song writer, dan pengusaha. Mempunyai circle bernama DopaMeanies yang berisi Manda, Revi Via, Wita, dan  Zaskia.</p>
+      </section>
+
+      <section class="section achievements">
+        <div class="headline"><h2>Pencapaian</h2></div>
+        <table aria-label="Tabel Pencapaian">
+  <thead>
+    <tr>
+      <th>Tahun</th>
+      <th>Pencapaian</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2019</td>
+      <td>
+        Juara 1 FLS2N Tari Kreasi<br>
+        Juara 1 Tari Kreasi
+      </td>
+    </tr>
+    <tr>
+      <td>2022</td>   
+<td>
+Juara 1 Solo Song <br>
+ Juara 2 Solo Song Religi
+      </td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>
+        Juara 2 Solo Song<br>
+        Juara 1 Solo Song
+      </td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>
+        Juara 1 Band
+      </td>
+    </tr>
+  </tbody>
+</table>
